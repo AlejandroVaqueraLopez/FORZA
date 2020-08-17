@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400&family=Roboto+Slab:wght@800&display=swap');
+
+/*presetts*/
+*{
+    margin:0;
+    padding:0;
+}
+.contenedor{
+	background: #1E3E49;
+	width: 90vw;
+	height: auto;
+	margin:auto;
+
+
+
+
+}
+
+.header{
+	height: 17vh;
+	width: 90vw;
+	background: #67ACFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.header__logo > img{
+	width: 100px;
+	height: 100px;
+	margin: 6px;
+	animation:rueda 3s ease;
+
+}
+
+@keyframes rueda
+{
+	
+	50%{
+		transform:translateX(160%) rotate(360deg);
+		
+		
+	}
+
+	100%{
+		transform: translateX(0%) rotate(-360deg);
+
+	}
+}
+
+
+
+
+.header__logo{
+	display: flex;
+	align-items: center;
+}
+
+.header__logo > b{
+	color: #000;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:50px;
+	animation:FORZA 3s cubic-bezier(.95,.05,.8,.04);
+}
+
+@keyframes FORZA{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+
+}
+
+
+
+.navigation{
+	
+	height: 40%;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 20px;
+	border: 5px solid #000;
+	border-radius: 10px;
+	flex-wrap: wrap;
+}
+
+	
+
+
+
+.menu li{
+	list-style: none;
+	display: inline-block;
+	position: relative;
+
+}
+
+.menu > li:hover{
+	border-left: 5px solid #000;
+	border-right: 5px solid #000;
+
+}
+
+
+.menu > li > a{
+	font-size: 1.5vw;
+	text-decoration: none;
+	color: #000;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 15px;
+	
+}
+
+.submenu{
+	
+	position: absolute;
+	display: none;
+	background: #67ACFF;
+	width: 109%;
+	margin-left:-4%;
+	border-left: 5px solid #000;
+	border-right: 5px solid #000;
+	border-bottom: 5px solid #000;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.submenu > li{
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 40px;
+}
+
+.submenu > li:hover{
+	border-bottom:3px solid #000;
+	border-top:3px solid #000;
+
+
+}
+
+.submenu > li > a{
+	font-size: 1vw;
+	text-decoration: none;
+	color: #000;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+
+
+.menu > li:hover .submenu{
+	display: block;	
+}
+
+.galery{
+	display: flex;
+	height: 300px;
+}
+
+.galery > .formula-rojo{
+	object-fit: cover;
+	width: 60%;
+}
+.galery > .formula-negro{
+	object-fit: cover;
+	width: 40%;
+}
+
+
+
+.contenedor-2{
+	display: flex;
+	
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.main{
+	flex-basis: 65%;
+	margin: 12px;
+	color:#fff;
+	border: 8px solid #67ACFF;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: justify;
+	font-family: 'MuseoModerno', cursive;
+    height: auto;
+}
+
+article{
+   
+}
+.aside{
+	flex-basis: 25%;
+    height: auto;
+	margin: 12px;
+	color:#fff;
+	border: 8px solid #67ACFF;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: justify;
+	font-family: 'MuseoModerno', cursive;
+    
+}
+
+.footer{
+	font-family: 'MuseoModerno', cursive;
+	color:#fff;
+	background: #67ACFF;
+    height: auto;
+}
